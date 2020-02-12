@@ -2,139 +2,137 @@
 
 *{
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
 }
+
 .wrapper{
         font-family: RubiK;
+       
 }
-    
-/*Estilos pantalla movil normal------------------------------*/
-
-/*Estilos Header ---------------------------------------------------------------------------------------*/
 
 
-.header {   
-        width: 100%;
-        min-height: 60px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        opacity: 0.95;
-        background-color: #099d8d;
-    }
-
-    .name {
-        font-size: 1.143rem;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 30px;
-        letter-spacing: normal;
-        color: #ffffff;
-    }
-
-    .menu {
-        color: #ffffff;
-        size: 14px; 
-        opacity: 0.9;
-        background-color: #14d9c4;
-        width: 100%;
-        height: 45px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu span {
-        padding: 15px 0;
-        font-size: 1.071rem;
-        flex-shrink: 1;
-    }
-
-    .hero {
-        width: 100%;
-        height: 421px;
-    }
-
-    .image-puzzle {
-        width: 100%;
-        height: 421px;
-        background: url("../images/piezas.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-top: -150px;
-        z-index: 1;
-    }
-
-    .claim_container {
-        background-color: white;
-        color: black;
-        height: 80px;
-        width: 290px;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 2;
-        transform: translate(0,-50px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .claim {
-        padding: 15px; 
-        font-size: 1.286rem;
-        line-height: 25px;
-    }
+a {
+ text-decoration: none;
+ color: white;
+}
 
 
-
-    .team-section {
-        text-align: center;
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-​
-    /* STYLE FOR CONTAINER CHILD OF TEAM-SECTION*/
-    
-    .team-container {
-        height: 60vh;
-        width: 80vw;
-        margin: 0 15;
-    }
-    
-    /*STYLE FOR TITLE SECTION*/
-    
-    .team-title { 
-        text-align: center;
-        font-family: "Rubik", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color:#14d9c4;
-        margin-top: 45px;
-    }
-    
-    /*STYLE FOR TEAM DESCRIPTION*/
-    
-    .team-text {
-        text-align: center;
-        font-family: "OpenSans", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.5em;
-        color: #54585a;
-        padding: 10px 15px 30px 15px;
-    }
+        /*Estilos Header ---------------------------------------------------------------------------------------*/
 
 
+        .header {   
+                width: 100%;
+                min-height: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.95;
+                background-color: #099d8d;
+        }
+
+        .name {
+                font-size: 1.143rem;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 30px;
+                letter-spacing: normal;
+                color: #ffffff;
+        }
+
+        .menu {
+                color: #ffffff;
+                size: 14px; 
+                opacity: 0.9;
+                background-color: #14d9c4;
+                width: 100%;
+                height: 45px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        .menu span {
+                padding: 15px 0;
+                font-size: 1.071rem;
+                flex-shrink: 1;
+        }
+
+        .hero {
+                width: 100%;
+                height: 421px;
+        }
+
+        .image-puzzle {
+                width: 100%;
+                height: 421px;
+                background-image: url("../images/piezas.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-top: -150px;
+                z-index: 1;
+        }
+
+        .claim_container {
+                background-color: white;
+                color: black;
+                height: 80px;
+                width: 290px;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 2;
+                transform: translate(0,-50px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+
+        .claim {
+                padding: 15px; 
+                font-size: 1.286rem;
+                line-height: 25px;
+        }
+
+        .team-section {
+                text-align: center;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+        }
+        ​
+        /*Estilos Main o Hero ----------------------------------------------------------------------------------*/
+
+        .container {
+                height: 60vh;
+                width: 80vw;
+                margin: 0 15;
+        }
+        
+        
+        .team-title { 
+                text-align: center;
+                font-family: "Rubik", sans-serif;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color:#14d9c4;
+                margin-top: 45px;
+        }
+        
+        /*Estilos Section - Equipo-----------------------------------------------------------------------------*/
+        
+        .team-text {
+                text-align: center;
+                font-family: "OpenSans", sans-serif;
+                font-size: 1rem;
+                color: #54585a;
+                padding: 10px;
+        }
 
 
-/*Estilos Section - Equipo-----------------------------------------------------------------------------*/
+
 
         /*Estilos Aside ----------------------------------------------------------------- */
         .fortalezas-y-debilidades {
@@ -147,7 +145,6 @@
                 
                 .fortalezas-y-debilidades:before {
                 content:'';
-                position: absolute;
                 top: 0;
                 left: 50%;
                 margin-left: -15px;
@@ -170,12 +167,16 @@
                 
                 .fortalezas-y-debilidades__item-title {
                 color: #12B69D;
+                font-family: 'RubiK' ;
+                font-weight: 400;
                 margin-top: 0;
                 margin-bottom: 30px;
                 }
                 
                 .fortalezas-y-debilidades__item-text {
                 color: #777;
+                font-family: 'RubiK' ;
+                font-weight: 400;
                 line-height: 1.5em;
                 }
             
@@ -282,78 +283,83 @@
         */
 
 
-/*Estilos Footer ---------------------------------------------------------------------------------------*/
+        /*Estilos Footer ---------------------------------------------------------------------------------------*/
 
 
-hr {
-        width: 100%;
-        height: 0.5px;
-        background-color:#b8b8b9;
-        opacity: 70%;
-      }
-      
-      .wrapper-footer {
-          display: flex;
-          width: 100%; 
-          background-color:#ffffff;
-          flex-direction: column;
-          align-items:center;
-          text-align: center;
-      }    
-      
-      .container-copy {
-        display: block;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        height: 20%;
-        font-family: 'Open Sans', sans-serif;
-        color:#b8b8b9;
-        opacity: 75%;
-        text-align: center;
-        font-size: 85%;
-      }
-      
-      .container-nav ul li a{
-        color: #54585a;
-        text-decoration: none;
-      }
-      
-      .container-nav ul li{
-        display: block;
-        font-family: 'Open Sans', sans-serif;
-        font-size: small;
-        color: #54585a;
-      }
-      
-      .container-nav ul{
-        padding: 0%;
-      }
-      
-      .container-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        font-family: 'Open-Sans', sans-serif;
-        font-size: 82%;
-        LINE-HEIGHT: 20px;
-        color: #54585a;
-        opacity: 70%;
-        padding: 0;
-      }
-      
-      
-      .logo-adalab img{
-        margin-bottom: 40px;;
-        margin-top: 30px;
-        width: 120px;
-      }
+        hr {
+                width: 100%;
+                height: 0.5px;
+                background-color:#b8b8b9;
+                opacity: 70%;
+        }
+        
+        .wrapper-footer {
+                display: flex;
+                width: 100%; 
+                background-color:#ffffff;
+                flex-direction: column;
+                align-items:center;
+                text-align: center;
+        }    
+        
+        .container-copy {
+                display: block;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                height: 20%;
+                font-family: 'Open Sans', sans-serif;
+                color:#b8b8b9;
+                opacity: 75%;
+                text-align: center;
+                font-size: 85%;
+        }
+        
+        .container-nav ul li a{
+                color: #54585a;
+                text-decoration: none;
+        }
+        
+        .container-nav ul li{
+                display: block;
+                font-family: 'Open Sans', sans-serif;
+                font-size: small;
+                color: #54585a;
+        }
+        
+        .container-nav ul{
+                padding: 0%;
+        }
+        
+        .container-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                font-family: 'Open-Sans', sans-serif;
+                font-size: 82%;
+                LINE-HEIGHT: 20px;
+                color: #54585a;
+                opacity: 70%;
+                padding: 0;
+        }
+        
+        
+        .logo-adalab img{
+                margin-bottom: 40px;;
+                margin-top: 30px;
+                width: 120px;
+        }
 
 
 
 
 
       @media screen and (min-width: 768px){
+        
+        .wrapper{
+                box-sizing: border-box;
+
+        }
 
         header {
                 width: 100%;
@@ -418,17 +424,15 @@ hr {
                 font-size: 1.286rem;
             }
 
-            .team-text { font-size:110%; } /* Increase the font size for tablets */
-
-
-
+            .team-text { font-size:110%; } 
 
         /* Aside -------------------------------------------- */
         .fortalezas-y-debilidades {
                 flex-direction: row;
                 justify-content: space-evenly;
             }
-            
+
+                   
             .fortalezas-y-debilidades__item {
                 width: 50%;
             }
@@ -526,9 +530,8 @@ desktop, a partir de 1200px
 
 @media screen and (min-width: 1200px){
 
-    /* Equipo ------------------------------------------------- */    
         .wrapper{
-                padding: 85px;
+                padding: 44px;
         }
         
         .picture{
@@ -598,12 +601,26 @@ desktop, a partir de 1200px
                 font-size: 1.286rem;
             }
 
-        .text-title { font-size:120%; } /* Increase the font size for PC */
-
-        .team-container {
-          padding-top: 80px;
-          padding-bottom: 40px;
+        .text-title { 
+                font-size:120%; 
         }
+
+        .container {
+                padding-top: 80px;
+                padding-bottom: 40px;
+              }
+
+    /* Equipo ------------------------------------------------- */    
+        .wrapper{
+                padding: 85px;
+        }
+        
+        .picture{
+                height: 278px;
+                width: 278px;
+        }
+
+
 
 
 /* Footer ---------------------------------------------------*/
