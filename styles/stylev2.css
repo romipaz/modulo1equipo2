@@ -1,0 +1,560 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header-puzzle {
+    background-color: #099d8d;
+    opacity: 0.95;
+    padding: 0.93rem;
+    height: 3.75rem;
+    width: 100vw;
+}
+
+.title {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding-top: 0.62rem;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: #14d9c4;
+    opacity: 0.9;
+    padding-top: 0.93rem;
+    font-size: 0.93rem;
+    font-weight: 800;
+    height: 2.81rem;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100vw;
+}
+
+.menu ul li {
+    display: inline;
+    padding-right: 0.62rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.43rem;
+    left: 1rem;
+    right: 1.06rem;
+}
+
+.hero {
+    background: url(../images/piezas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 65vh;
+}
+
+.claim-container {
+    transform: translate(0px, 31px);
+    width: 290px;
+    z-index: 2;
+}
+
+.claim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 20%;
+    padding: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+}
+
+.claim h2 {
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.team-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+}
+
+.team-title {
+    color: #14D9C4;
+    font-size: 24px;
+    width: 89px;
+    height: 45px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    margin: 0px;
+}
+.team-text {
+    color: #54585A;
+    width: 100%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0px;
+}
+.team-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.triangle {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: #FFFFFF;
+    position: relative;
+    /* bottom: 15px; */
+    margin-left: auto;
+    margin-right: auto;
+    top: 15px;
+}
+
+.strenghts-weakness {
+    background-color: rgba(184, 184, 185, 0.2);
+}
+.sw-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.875rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    padding-bottom: 2.8125rem;
+}
+.strenghts {
+    width: 100%;
+}
+.sw-container h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.37rem;
+    line-height: 2.05;
+    color: #099D8D;
+    margin: 0;
+}
+.sw-container p {
+    font-family: 'Open Sans', sans-serif;
+    color: #54585A;
+    line-height: 1.5;
+    margin: 0;
+}
+.weakness {
+    padding-top: 1.875rem;
+}
+
+.miembros-equipo {
+    margin: 0px;
+    padding: 55px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titulo-miembros {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #099d8d;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.miembro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.picture {
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+    border: 5px solid #D4D3D3;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilos particulares picture por miembro -------------------------------------- */
+
+.picture-ana {
+    background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5DBR7-3e76dcf02272-512);
+}
+
+.picture-ana-belen {
+    background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK56P09-2d22f5df5e45-512);
+}
+
+.picture-beatriz {
+    background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5FTLZ-18441b3a0b58-512);
+}
+
+.picture-maite {
+    background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSEL05-53eb30c74f26-512);
+}
+
+.picture-romi {
+    background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSUUBX-286f57c0b014-512);
+}
+
+
+
+.cv {
+    text-align: center;
+    max-width: 439px;
+}
+
+.nombre {
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.descripcion {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #535151;
+    line-height: 1.5em;
+}
+
+.redes {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.redes ul {
+    padding: 0px;
+}
+
+.redes li {
+    display: inline-block;
+    list-style: none;
+}
+
+.separador-redes {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: black;
+    margin-bottom: 0.5em;
+}
+
+.enlace {
+    color: #16A293;
+    font-size: 20px;
+}
+
+hr {
+    width: 100%;
+    height: 0.5px;
+    background-color: #b8b8b9;
+    opacity: 70%;
+}
+
+.wrapper-footer {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-copy {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 20%;
+    font-family: 'Open Sans', sans-serif;
+    color: #b8b8b9;
+    opacity: 75%;
+    text-align: center;
+    font-size: 85%;
+}
+
+.container-nav ul li a {
+    color: #54585a;
+    text-decoration: none;
+}
+
+.container-nav ul li {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    color: #54585a;
+}
+
+.container-nav ul {
+    padding: 0%;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 82%;
+    LINE-HEIGHT: 20px;
+    color: #54585a;
+    opacity: 70%;
+    padding: 0;
+}
+
+.logo-adalab img {
+    margin-bottom: 40px;
+    ;
+    margin-top: 30px;
+    width: 120px;
+}
+
+@media all and (min-width:768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        background-color: #099D8D;
+        opacity: 0.9;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+    }
+
+    .title {
+        text-align: left;
+        margin-left: 2.81rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100vw;
+        padding-top: 22.5px;
+        background-color: #099D8D;
+        opacity: 0.9;
+    }
+    .hero {
+        justify-content: flex-start;
+        padding-left: 5%;
+        height: 35vh;
+        background-position: center;
+    }
+    .claim-container {
+        width: 55vw;
+        transform: none;
+    }
+    .claim {
+        opacity: 0.8;
+        width: 441px;
+        height: 80px;
+    }
+    .claim h2 {
+        text-align: left;
+        line-height: 1.39;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+   
+    .team-container {
+        width: 100%;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    .team-text {
+        max-height: 220px;
+    }
+    .strenghts-weakness {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 2.8125rem;
+        padding-bottom: 3.75rem;
+        padding-left: 2.8125rem;
+        padding-right: 2.8125rem;
+    }
+    .weakness {
+        padding-top: 3rem;
+        padding-left: 1.875rem;
+    }
+
+    
+    .titulo-miembros {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .miembro {
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 60px;
+            padding: 0px 111px;
+    }
+
+    .miembros-equipo {
+        padding: 0px;
+    }
+
+    .miembro-ana-belen,
+    .miembro-maite {
+            flex-direction: row-reverse;
+    }
+
+    .picture {
+            height: 205px;
+            width: 205px;
+    }
+
+    .cv {
+            text-align: left;
+            margin-left: 30px;
+            margin-right: 30px;
+    }
+
+    .miembro-ana-belen .cv,
+    .miembro-maite .cv {
+            text-align: right;
+    }
+
+
+    /*Footer ------------------------------------------*/
+    hr {
+            width: 100%;
+            height: 0.5px;
+            background-color: #b8b8b9;
+            opacity: 70%;
+    }
+
+    .wrapper-footer {
+
+            height: 140px;
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            position: relative;
+    }
+
+    .container-nav ul li a {
+            font-size: 14px;
+            LINE-HEIGHT: 30px;
+    }
+
+    .container-nav {
+            display: block;
+            position: absolute;
+            text-align: right;
+            right: 0;
+            margin-right: 30px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+    }
+
+    .container-copy {
+            display: block;
+            position: absolute;
+            text-align: left;
+            margin-left: 2.5%;
+
+    }
+
+    .logo-adalab img {
+            display: block;
+            position: absolute;
+            text-align: left;
+            top: 20%;
+            margin-left: 2.5%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .hero {
+        justify-content: flex-start;
+        height: 80vh;
+        background: url(../images/piezas.jpg);
+        background-position: center;
+    }
+
+    .title {
+        margin-left: 12.81rem;
+    }
+    .claim-container {
+        width: 574px;
+        height: 90px;
+        transform: translate(0, -29px);
+    }
+
+    .claim h2 {
+        text-align: left;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .team-container {
+        width: 100%;
+        padding-left: 300px;
+        padding-right: 300px;
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+    .weakness {
+        padding-left: 2, 8125rem;
+    }
+ 
+}

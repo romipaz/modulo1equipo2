@@ -1,33 +1,378 @@
 /* Estilos generales -- tipos de letra, fondo general, etc -------------------------------------------*/
 
-*{
+* {
         box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper {
         font-family: RubiK;
-       
 }
 
 
-a {
- text-decoration: none;
- color: white;
+/*Estilos Header ---------------------------------------------------------------------------------------*/
+
+.header-puzzle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.95;
+        background-color: #099d8d;
+        width: 100vw;
+        min-height: 60px;
 }
 
 
-        /*Estilos Header ---------------------------------------------------------------------------------------*/
+.name {
+        font-size: 1.143rem;
+        font-stretch: normal;
+        font-style: normal;
+        font-family: 'RubiK';
+        line-height: 30px;
+        letter-spacing: normal;
+        color: #ffffff;
+}
 
 
-        .header {   
+.breathing {
+        padding-left: 16px;
+        padding-right: 16px;
+        opacity: 0.9;
+        background-color: #14d9c4;
+        width: 100vw;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'RubiK';
+}
+
+.breathing a {
+        padding: 15px 0;
+        font-size: 1.071rem;
+        flex-shrink: 1;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        line-height: 30px;
+}
+
+.hero {
+        width: 100vw;
+        height: 421px;
+        background-image: url("../images/piezas.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: -150px;
+}
+
+/*.image-puzzle {
+        width: 100%;
+        height: 421px;
+        background-image: url("../images/piezas.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: -150px;
+        z-index: 1;
+}*/
+
+.claim_container {
+        background-color: white;
+        color: black;
+        height: 80px;
+        width: 100vw;
+        z-index: 2;
+        transform: translate(0, -50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.claim {
+        padding: 15px;
+        font-size: 1.286rem;
+        line-height: 25px;
+}
+
+​
+
+/*Estilos Sección Equipo ----------------------------------------------------------------------------------*/
+.team-section {
+        text-align: center;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+.container {
+        height: 60vh;
+        width: 80vw;
+        margin: 0 15;
+}
+
+.team-title {
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #14d9c4;
+        margin-top: 45px;
+}
+
+.team-text {
+        text-align: center;
+        font-family: "OpenSans", sans-serif;
+        font-size: 1rem;
+        color: #54585a;
+        padding: 10px;
+}
+
+/*Estilos Aside ----------------------------------------------------------------- */
+.fortalezas-y-debilidades {
+        width: 100vw;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.fortalezas-y-debilidades:before {
+        content: '';
+        top: 0;
+        left: 50%;
+        margin-left: -15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 20px 0 20px;
+        border-color: #ffffff transparent transparent transparent;
+}
+
+.fortalezas-y-debilidades__item {
+        /*flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 200px;
+        min-width: 300px;*/
+        width: 100%;
+        text-align: center;
+        padding: 60px 30px;
+}
+
+.fortalezas-y-debilidades__item-title {
+        color: #12B69D;
+        font-family: 'RubiK';
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 30px;
+}
+
+.fortalezas-y-debilidades__item-text {
+        color: #777;
+        font-family: 'RubiK';
+        font-weight: 400;
+        line-height: 1.5em;
+}
+
+
+/*Estilos Miembros equipo (Beatriz)---------------------------------------------------------------------*/
+.miembros-equipo {
+        margin: 0px;
+        padding: 0px;
+}
+
+.titulo-miembros {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #099d8d;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+
+.miembro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 45px;
+        max-width: 1000px;
+}
+
+.picture {
+        height: 180px;
+        width: 180px;
+        border-radius: 10px;
+        border: 5px solid #D4D3D3;
+        background-position: center;
+        background-size: cover;
+}
+
+/* Estilos particulares picture por miembro -------------------------------------- */
+
+.picture-ana {
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5DBR7-3e76dcf02272-512);
+}
+
+.picture-ana-belen {
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK56P09-2d22f5df5e45-512);
+}
+
+.picture-beatriz {
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5FTLZ-18441b3a0b58-512);
+}
+
+.picture-maite {
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSEL05-53eb30c74f26-512);
+}
+
+.picture-romi {
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSUUBX-286f57c0b014-512);
+}
+
+
+
+.cv {
+        text-align: center;
+        max-width: 439px;
+}
+
+.nombre {
+        color: black;
+        font-size: 20px;
+        margin-top: 15px;
+}
+
+.descripcion {
+        font-size: 16px;
+        font-weight: lighter;
+        color: #535151;
+        line-height: 1.5em;
+}
+
+.redes {
+        display: inline-block;
+        margin-top: 15px;
+}
+
+.redes ul {
+        padding: 0px;
+}
+
+.redes li {
+        display: inline-block;
+        list-style: none;
+}
+
+.separador-redes {
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: black;
+        margin-bottom: 0.5em;
+}
+
+.enlace {
+        color: #16A293;
+        font-size: 20px;
+}
+
+/*Estilos Footer ---------------------------------------------------------------------------------------*/
+
+hr {
+        width: 100%;
+        height: 0.5px;
+        background-color: #b8b8b9;
+        opacity: 70%;
+}
+
+.wrapper-footer {
+        display: flex;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+
+.container-copy {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        height: 20%;
+        font-family: 'Open Sans', sans-serif;
+        color: #b8b8b9;
+        opacity: 75%;
+        text-align: center;
+        font-size: 85%;
+}
+
+.container-nav ul li a {
+        color: #54585a;
+        text-decoration: none;
+}
+
+.container-nav ul li {
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: small;
+        color: #54585a;
+}
+
+.container-nav ul {
+        padding: 0%;
+}
+
+.container-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-family: 'Open-Sans', sans-serif;
+        font-size: 82%;
+        LINE-HEIGHT: 20px;
+        color: #54585a;
+        opacity: 70%;
+        padding: 0;
+}
+
+
+.logo-adalab img {
+        margin-bottom: 40px;
+        ;
+        margin-top: 30px;
+        width: 120px;
+}
+
+/*TABLET---------------------------------------------------------------------------------------*/
+
+@media all and (min-width: 768px) {
+
+        .header {
                 width: 100%;
-                min-height: 60px;
+                height: 60px;
+                opacity: 0.95;
+                background-color: #099d8d;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        .header-puzzle {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 opacity: 0.95;
                 background-color: #099d8d;
+                width: 100vw;
+                min-height: 60px;
+                font-family: 'RubiK';
         }
 
         .name {
@@ -39,23 +384,27 @@ a {
                 color: #ffffff;
         }
 
-        .menu {
-                color: #ffffff;
-                size: 14px; 
+        .breathing {
+                padding-left: 16px;
+                padding-right: 16px;
                 opacity: 0.9;
                 background-color: #14d9c4;
-                width: 100%;
+                width: 100vw;
                 height: 45px;
                 display: flex;
-                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                font-family: 'RubiK';
         }
 
-        .menu span {
+        .breathing a {
                 padding: 15px 0;
                 font-size: 1.071rem;
                 flex-shrink: 1;
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                line-height: 30px;
         }
 
         .hero {
@@ -78,512 +427,192 @@ a {
                 background-color: white;
                 color: black;
                 height: 80px;
-                width: 290px;
-                margin-left: auto;
-                margin-right: auto;
-                z-index: 2;
-                transform: translate(0,-50px);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-        }
-
-        .claim {
-                padding: 15px; 
-                font-size: 1.286rem;
-                line-height: 25px;
-        }
-
-        .team-section {
-                text-align: center;
-                background-color: white;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-        }
-        ​
-        /*Estilos Main o Hero ----------------------------------------------------------------------------------*/
-
-        .container {
-                height: 60vh;
-                width: 80vw;
-                margin: 0 15;
-        }
-        
-        
-        .team-title { 
-                text-align: center;
-                font-family: "Rubik", sans-serif;
-                font-size: 1.5rem;
-                font-weight: 500;
-                color:#14d9c4;
-                margin-top: 45px;
-        }
-        
-        /*Estilos Section - Equipo-----------------------------------------------------------------------------*/
-        
-        .team-text {
-                text-align: center;
-                font-family: "OpenSans", sans-serif;
-                font-size: 1rem;
-                color: #54585a;
-                padding: 10px;
-        }
-
-
-
-
-        /*Estilos Aside ----------------------------------------------------------------- */
-        .fortalezas-y-debilidades {
-                width:100vw;
-                background-color: #eee;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                }
-                
-                .fortalezas-y-debilidades:before {
-                content:'';
-                top: 0;
-                left: 50%;
-                margin-left: -15px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 20px 20px 0 20px;
-                border-color: #ffffff transparent transparent transparent;
-                }
-                
-                .fortalezas-y-debilidades__item {
-                /*flex-grow: 2;
-                flex-shrink: 1;
-                flex-basis: 200px;
-                min-width: 300px;*/
-                width: 100%;
-                text-align: center;
-                padding: 60px 30px;
-                }
-                
-                .fortalezas-y-debilidades__item-title {
-                color: #12B69D;
-                font-family: 'RubiK' ;
-                font-weight: 400;
-                margin-top: 0;
-                margin-bottom: 30px;
-                }
-                
-                .fortalezas-y-debilidades__item-text {
-                color: #777;
-                font-family: 'RubiK' ;
-                font-weight: 400;
-                line-height: 1.5em;
-                }
-            
-            
-
-
-        /*Estilos Miembros equipo (Beatriz)---------------------------------------------------------------------*/
-        .miembros-equipo{
-                margin: 0px;
-                padding: 0px;
-        }
-        .titulo-miembros{
-                text-align: center;
-                font-size: 24px;
-                font-weight: bold; 
-                color: #099d8d;
-                margin-top: 30px;
-                margin-bottom: 30px;
-        }
-        .miembro{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                align-items: center;
-                margin-bottom: 45px;
-                max-width: 1000px;
-        }
-
-        .picture{
-                height: 180px;
-                width: 180px;
-                border-radius: 10px;
-                border: 5px solid #D4D3D3;
-                background-position: center;
-                background-size: cover;
-
-        }
-                        /* Estilos particulares picture por miembro -------------------------------------- */
-
-                        .picture-ana{
-                                background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5DBR7-3e76dcf02272-512);
-                        }
-                        .picture-ana-belen{
-                                background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK56P09-2d22f5df5e45-512);
-                        }
-                        .picture-beatriz{
-                                background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5FTLZ-18441b3a0b58-512);
-                        }
-                        .picture-maite{
-                                background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSEL05-53eb30c74f26-512);
-                        }
-                        .picture-romi{
-                                background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSUUBX-286f57c0b014-512);
-                        }
-
-
-
-        .cv{
-                text-align: center;
-                max-width: 439px;
-        }
-                        .nombre{
-                                color: black;
-                                font-size: 20px;
-                                margin-top: 15px;
-                        }
-                        .descripcion{
-                                font-size: 16px;
-                                font-weight: lighter;
-                                color: #535151;
-                                line-height: 1.5em;
-                        }
-                        .redes{
-                                display: inline-block;
-                                margin-top: 15px;
-                        }
-                        .redes ul{
-                                padding: 0px;
-                        }
-
-                        .redes li{
-                                display: inline-block;
-                                list-style: none;
-                        }
-                        
-                        .separador-redes{
-                                display: inline-block;
-                                width: 2px;
-                                height: 2px;
-                                border-radius: 1px;
-                                background-color: black;
-                                margin-bottom: 0.5em;
-                        }
-                        .enlace{
-                                color: #16A293;
-                                font-size: 20px;
-                        }
-
-
-
-        /*
-        móvil, por debajo de 768px, tablet, desde 768px hasta 1200px
-        */
-
-
-        /*Estilos Footer ---------------------------------------------------------------------------------------*/
-
-
-        hr {
-                width: 100%;
-                height: 0.5px;
-                background-color:#b8b8b9;
-                opacity: 70%;
-        }
-        
-        .wrapper-footer {
-                display: flex;
-                width: 100%; 
-                background-color:#ffffff;
-                flex-direction: column;
-                align-items:center;
-                text-align: center;
-        }    
-        
-        .container-copy {
-                display: block;
-                margin-top: 30px;
-                margin-bottom: 20px;
-                height: 20%;
-                font-family: 'Open Sans', sans-serif;
-                color:#b8b8b9;
-                opacity: 75%;
-                text-align: center;
-                font-size: 85%;
-        }
-        
-        .container-nav ul li a{
-                color: #54585a;
-                text-decoration: none;
-        }
-        
-        .container-nav ul li{
-                display: block;
-                font-family: 'Open Sans', sans-serif;
-                font-size: small;
-                color: #54585a;
-        }
-        
-        .container-nav ul{
-                padding: 0%;
-        }
-        
-        .container-nav {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-                font-family: 'Open-Sans', sans-serif;
-                font-size: 82%;
-                LINE-HEIGHT: 20px;
-                color: #54585a;
-                opacity: 70%;
-                padding: 0;
-        }
-        
-        
-        .logo-adalab img{
-                margin-bottom: 40px;;
-                margin-top: 30px;
-                width: 120px;
-        }
-
-
-
-
-
-      @media screen and (min-width: 768px){
-        
-        .wrapper{
-                box-sizing: border-box;
-
-        }
-
-        header {
-                width: 100%;
-                height: 60px;
-                opacity: 0.95;
-                background-color: #099d8d;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-        
-            .header {
-                margin-left: 45px;              
-            }
-        
-            .name {
-                font-size: 1.143rem;
-            }
-        
-            .menu {
-                background-color: #099d8d;
-                opacity: 0.95; 
-                margin-right: 27px;  
-            }
-        
-            .menu span {
-                font-size: 1.071rem;
-                padding: 18px;
-            }
-        
-            .hero {
-                width: 100%;
-                height: 421px;
-            }
-        
-            .image-puzzle {
-                width: 100%;
-                height: 421px;
-                background-image: url("../images/piezas.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                margin-top: -150px;
-                z-index: 1;
-            }
-        
-            .claim_container {
-                background-color: white;
-                color: black;
-                height: 80px;
                 width: 441px;
                 margin-right: auto;
                 margin: 46px;
                 z-index: 2;
-                transform: translate(0,-120px);
+                transform: translate(0, -120px);
                 opacity: 0.8;
-            }
-        
-            .claim {
-                padding: 20px; 
+        }
+
+        .claim {
+                padding: 20px;
                 opacity: 1;
                 font-size: 1.286rem;
-            }
+        }
 
-            .team-text { font-size:110%; } 
+        .team-text {
+                font-size: 110%;
+        }
 
-        /* Aside -------------------------------------------- */
+        /* Aside ------------------------------------ */
         .fortalezas-y-debilidades {
                 flex-direction: row;
                 justify-content: space-evenly;
-            }
+        }
 
-                   
-            .fortalezas-y-debilidades__item {
+
+        .fortalezas-y-debilidades__item {
                 width: 50%;
-            }
-        
-       /* Sección Equipo -------------------------------*/ 
+        }
 
-        
-        .titulo-miembros{
+        /* Sección Equipo ---------------------------*/
+
+        .titulo-miembros {
                 margin-top: 45px;
                 margin-bottom: 45px;
         }
-        .miembro{
+
+        .miembro {
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 align-content: center;
                 margin-bottom: 60px;
         }
-        .miembro-ana-belen,.miembro-maite{
+
+        .miembro-ana-belen,
+        .miembro-maite {
                 flex-direction: row-reverse;
         }
 
-
-        .picture{
-                height: 205px; 
-                width: 205px; 
+        .picture {
+                height: 205px;
+                width: 205px;
         }
 
-        .cv{
+        .cv {
                 text-align: left;
                 margin-left: 30px;
-                margin-right: 30px;   
+                margin-right: 30px;
         }
-        .miembro-ana-belen .cv,.miembro-maite .cv{
+
+        .miembro-ana-belen .cv,
+        .miembro-maite .cv {
                 text-align: right;
         }
 
-   /*  Footer ------------------------------------------*/
-   hr {
-        width: 100%;
-        height: 0.5px;
-        background-color:#b8b8b9;
-        opacity: 70%;
-      }
-  
-        .wrapper-footer{
-  
-          height: 140px;
-          display: flex;
-          align-items: flex-start;
-          text-align: left;
-          position: relative;  
-        }
-  
-        .container-nav ul li a{
-          font-size: 14px;
-          LINE-HEIGHT: 30px;
-        }
-  
-        .container-nav{
-          display: block;
-          position: absolute;
-          text-align: right;
-          right: 0;
-          margin-right: 30px;
-          margin-top: 1%;
-          margin-bottom: 1%;
-        }
-  
-        .container-copy{
-          display: block;
-          position: absolute;
-          text-align: left;
-          margin-left: 2.5%;         
-  
-        }
-        .logo-adalab img{
-          display: block;
-          position: absolute;
-          text-align: left;   
-          top: 20%;
-          margin-left: 2.5%;     
-        }
-  
 
+        /*Footer ------------------------------------------*/
+        hr {
+                width: 100%;
+                height: 0.5px;
+                background-color: #b8b8b9;
+                opacity: 70%;
+        }
 
+        .wrapper-footer {
+
+                height: 140px;
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+                position: relative;
+        }
+
+        .container-nav ul li a {
+                font-size: 14px;
+                LINE-HEIGHT: 30px;
+        }
+
+        .container-nav {
+                display: block;
+                position: absolute;
+                text-align: right;
+                right: 0;
+                margin-right: 30px;
+                margin-top: 1%;
+                margin-bottom: 1%;
+        }
+
+        .container-copy {
+                display: block;
+                position: absolute;
+                text-align: left;
+                margin-left: 2.5%;
+
+        }
+
+        .logo-adalab img {
+                display: block;
+                position: absolute;
+                text-align: left;
+                top: 20%;
+                margin-left: 2.5%;
+        }
 }
 
-/*
-desktop, a partir de 1200px
-*/
+/* desktop, a partir de 1200px -------*/
 
-
-
-
-@media screen and (min-width: 1200px){
-
-        .wrapper{
-                padding: 44px;
-        }
-        
-        .picture{
-                height: 278px;
-                width: 278px;
-        }
+@media screen and (min-width: 1200px) {
 
         header {
                 width: 100%;
-                height: 60px;
+                height: 105px;
                 opacity: 0.95;
                 background-color: #099d8d;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-            }
-        
-            .header {
-                margin-left: 142px;              
-            }
-        
-            .name {
-                font-size: 1.143rem;
-            }
-        
-            .menu {
+        }
+
+
+        .header-puzzle {
+                display: inline-block;
+                padding-left: 142px;
+                padding-right: 0;
+                opacity: 0.95;
                 background-color: #099d8d;
-                opacity: 0.95; 
-                margin-right: 120px;
-            }
-        
-            .menu span {
+                min-height: 60px;
+                padding-right: 0;
+                align-content: center;
+                font-family: 'RubiK';
+        }
+
+
+        .name {
+                display: inline-block;
+                font-size: 1.143rem;
+                font-stretch: normal;
+                color: white;
+                font-size: 15px;
+                font-family: 'Rubik';
+                line-height: 30px;
+        }
+
+
+        .breathing {
+                display: inline-block;
+                opacity: 0.9;
+                background-color: transparent;
+                width: 500px;
+                height: 45px;
+                align-content: center;
+                font-family: 'RubiK';
+        }
+
+        .breathing a {
+                padding: 15px 0;
                 font-size: 1.071rem;
-                padding: 18px;
-            }
-        
-            .hero {
-                width: 100%;
-                height: 450px;
-            }
-            .image-puzzle {
-                width: 100%;
-                height: 550px;
+                flex-shrink: 1;
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                font-family: 'Rubik';
+                line-height: 30px;
+        }
+
+        .hero {
+                width: 100vw;
+                height: 421px;
                 background-image: url("../images/piezas.jpg");
                 background-repeat: no-repeat;
-                background-position: center;
                 background-size: cover;
+                background-position: center;
                 margin-top: -150px;
-                z-index: 1;
-            }
-        
-            .claim_container {
+        }
+
+        .claim_container {
                 background-color: white;
                 color: black;
                 height: 90px;
@@ -591,88 +620,86 @@ desktop, a partir de 1200px
                 margin-right: auto;
                 margin: 138px;
                 z-index: 2;
-                transform: translate(0,-220px);
+                transform: translate(0, -220px);
                 opacity: 0.8;
-            }
-        
-            .claim {
-                padding: 20px; 
+        }
+
+        .claim {
+                padding: 20px;
                 opacity: 1;
                 font-size: 1.286rem;
-            }
+        }
 
-        .text-title { 
-                font-size:120%; 
+        .text-title {
+                font-size: 120%;
         }
 
         .container {
                 padding-top: 80px;
                 padding-bottom: 40px;
-              }
+        }
 
-    /* Equipo ------------------------------------------------- */    
-        .wrapper{
+        /* Equipo -------------------------------- */
+        .wrapper {
                 padding: 85px;
         }
-        
-        .picture{
+
+        .picture {
                 height: 278px;
                 width: 278px;
         }
 
+        .miembro-ana-belen .cv,
+        .miembro-maite .cv {
+                text-align: right;
+        }
 
 
+        /* Footer ---------------------------*/
+        hr {
+                width: 100%;
+                height: 1px;
+                background-color: #b8b8b9;
+                opacity: 70%;
+        }
 
-/* Footer ---------------------------------------------------*/
-hr {
-        width: 100%;
-        height: 1px;
-        background-color:#b8b8b9;
-        opacity: 70%;
-       } 
-   
-       .wrapper-footer{
-   
-         height: 140px;
-         display: flex;
-         align-items: flex-start;
-         text-align: left;
-         position: relative;  
-       }
-   
-       .container-nav ul li a{
-         font-size: 16px;
-         LINE-HEIGHT: 32px;
-       }
-   
-       .container-nav{
-         display: block;
-         position: absolute;
-         text-align: right;
-         right: 0;
-         margin-right: 40px;
-         margin-top: 1%;
-         margin-bottom: 1%;
-       }
-   
-       .container-copy{
-         display: block;
-         position: absolute;
-         text-align: left;
-         margin-left: 3.5%;         
-   
-       }
-       .logo-adalab img{
-         display: block;
-         position: absolute;
-         text-align: left;   
-         top: 20%;
-         margin-left: 3.5%;     
-       }
+        .wrapper-footer {
+                height: 140px;
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+                position: relative;
+        }
 
+        .container-nav ul li a {
+                font-size: 16px;
+                LINE-HEIGHT: 32px;
+        }
 
+        .container-nav {
+                display: block;
+                position: absolute;
+                text-align: right;
+                right: 0;
+                margin-right: 40px;
+                margin-top: 1%;
+                margin-bottom: 1%;
+        }
 
+        .container-copy {
+                display: block;
+                position: absolute;
+                text-align: left;
+                margin-left: 3.5%;
 
+        }
 
+        .logo-adalab img {
+                display: block;
+                position: absolute;
+                text-align: left;
+                top: 20%;
+                margin-left: 3.5%;
+        }
 
 }
